@@ -1,0 +1,28 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<div class="container">
+  <div class="jumbotron">
+    <ul>
+      @foreach (var Place in Model) {
+        <li>@Place.GetName()</li>
+        <li>@Place.GetDescription()</li>
+        </br>
+      }
+    </u>
+  </div>
+  
+  <div class="">
+    <form action="/search" method="post">
+      <label for="search">Search for a place from the list</label>
+      <input type="text" name="search" placeholder="place">
+    </form>
+  </div>
+
+  <div>
+    <form action="/" method="get">
+      <button type="submit">Home</button>
+    </form>
+  </div>
+</div>
