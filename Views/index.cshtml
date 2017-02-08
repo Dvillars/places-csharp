@@ -1,0 +1,21 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>places</h1>
+  </div>
+  <div class="row">
+    <form action="/places" method="post">
+      <div class="form-group">
+        <label for="location">local : </label>
+        <input type="text" name="location" id="location">
+      </div>
+      <div class="form-group">
+        <label for="description">describ : </label>
+        <input type="text" name="description" id="description">
+      </div>
+    </form>
+  </div>
+</div>
